@@ -1,0 +1,407 @@
+/* Section styling */
+.section {
+    height: 100vh;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-section {
+    background-color: #ff9900;
+    color: white;
+}
+
+/* about section*/
+.about-section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(202, 82, 247);
+    background: radial-gradient(circle, rgba(202, 82, 247, 1) 0%, rgba(177, 7, 251, 1) 97%);
+    padding: 100px 0;
+}
+
+.about-content {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-image {
+    width: 300px;
+    height: 300px;
+    background-image: url("images/image.png");
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.about-content:hover .about-image {
+    transform: scale(1.1);
+}
+
+.about-text {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+}
+
+.about-text h1 {
+    margin-top: 0;
+    font-size: 32px;
+    color: #ffffff;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 64px;
+}
+
+.about-text p {
+    line-height: 1.8;
+    color: #fdfbfb;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.u-btn-learn-more {
+    background: none;
+    border: none;
+    color: #fdf8f8;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 14px;
+    transition: color 0.3s ease-in-out;
+}
+
+.u-btn-learn-more:hover {
+    color: #ff9900;
+}
+
+.section-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.section-heading {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+#home {
+    height: 100vh;
+}
+
+#height1 {
+    height: 100vh;
+}
+
+/* sign in section*/
+#signin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background: url("images/bgsignin.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.form-box {
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#signin h2 {
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+}
+
+.inputbox {
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid #fff;
+}
+
+.inputbox label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1em;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+#signin input:focus~label {
+    top: -5px;
+}
+
+#signin input:valid~label {
+    top: -5px;
+}
+
+.inputbox input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+    color: #fff;
+}
+
+.inputbox ion-icon {
+    position: absolute;
+    right: 8px;
+    color: #fff;
+    font-size: 1.2em;
+    top: 20px;
+}
+
+.forget {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0 15px;
+    font-size: 0.9em;
+    color: #fff;
+}
+
+.forget label:nth-child(2) {
+    order: 1;
+}
+
+.forget label {
+    display: flex;
+    align-items: center;
+}
+
+.forget label input[type="checkbox"] {
+    margin-right: 6px;
+}
+
+.forget label a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.forget label a:hover {
+    text-decoration: underline;
+}
+
+#signin button {
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.register {
+    font-size: 0.9em;
+    color: #fff;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+.register p a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+.register p a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Section Styling */
+
+.contact-section {
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 60px 0;
+    height: 100vh;
+}
+
+.contact-wrapper {
+    animation-name: fadeIn;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.contact-heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align-last: left;
+}
+
+.contact-form-wrap {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 30px;
+}
+.form-message-warning,
+.form-message-success {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.form-message-warning {
+    background-color: #ffc107;
+    color: #333;
+}
+
+.form-message-success {
+    background-color: #28a745;
+    color: #fff;
+}
+
+/* Add animation properties to the messages */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.form-message-warning.animate,
+.form-message-success.animate {
+    display: block;
+    animation: fadeIn 0.5s ease-in-out;
+}
+/* Contact Form Fields */
+.contact-form-wrap input,
+.contact-form-wrap textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.contact-form-wrap textarea {
+    resize: vertical;
+}
+
+.contact-form-wrap .btn-primary {
+    background-color: #ff9900;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form-wrap .btn-primary:hover {
+    background-color: #ff6600;
+}
+
+/* Contact Info Styling */
+.contact-info-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.contact-info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+/* Add animation properties to the contact info */
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.contact-info-wrap.animate {
+    animation: slideIn 0.5s ease-in-out;
+}
+
+.contact-info-heading {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.contact-info-box {
+    margin-bottom: 20px;
+}
+
+.contact-info-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #333;
+}
+
+.contact-info-text {
+    padding-left: 15px;
+    line-height: 1.4;
+    position: relative;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+
+    .contact-form-wrap,
+    .contact-info-wrap {
+        padding: 20px;
+    }
+}

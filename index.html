@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="section.css">
+  <title>Website</title>
+</head>
+
+<body>
+  <nav class="navbar" id="nav">
+    <div class="container">
+      <a class="navbar-logo" href="#">Techno</a>
+      <ul class="navbar-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#signin">Sign In</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="home" class="section home-section">
+    <div id="carouselExampleDark" class="carousel carousel-dark slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner" >
+        <div class="carousel-item active" id="height1">
+          <img src="images/slide1.jpg" class="d-block w-100" id="img1" alt="..." >
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+            <button class="start-button" data-target="about">Get Started</button>
+          </div>
+        </div>
+        <div class="carousel-item" id="height1">
+          <img src="images/slide2.jpg" class="d-block w-100" alt="..."  >
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+            <button class="start-button" data-target="about">Get Started</button>
+          </div>
+        </div>
+        <div class="carousel-item" id="height1">
+          <img src="images/slide3.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+            <button class="start-button" data-target="about">Get Started</button>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+  
+  <section class="about-section" id="about">
+    <div class="about-content">
+      <div class="about-text">
+        <h1><b>About Us</b></h1>
+        <p>Exploring the frontiers of innovation to redefine how you experience technology.</p>
+        <p>Empowering through technology, we simplify the complex and make the extraordinary accessible.</p>
+        <button class="u-btn-learn-more">Learn More</button>
+      </div>
+      <div class="about-image"></div>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact-section" style="padding-top: 150px;">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10 col-md-12">
+          <div class="contact-wrapper">
+            <div class="row no-gutters">
+              <div class="col-md-7 d-flex align-items-stretch">
+                <div class="contact-form-wrap w-100 p-md-5 p-4">
+                  <h3 class="contact-heading mb-4">Get in touch</h3>
+                  <div class="form-message-warning mb-4"></div>
+                  <div class="form-message-success mb-4">
+                    Your message was sent, thank you!
+                  </div>
+                  <form method="POST" id="contactForm" name="contactForm">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <input type="text" class="form-control" name="name" id="name" placeholder="Name">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <textarea name="message" class="form-control" id="message" cols="30" rows="7"
+                            placeholder="Message"></textarea>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <input type="submit" value="Send Message" class="btn btn-primary">
+                          <div class="submitting"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+              </div>
+              </div>
+              <div class="col-md-5 d-flex align-items-stretch">
+                <div class="contact-info-wrap bg-primary w-100 p-lg-5 p-4">
+                  <h3 class="contact-info-heading mb-4 mt-md-4">Contact us</h3>
+                    <div class="contact-info-box">
+                      <div class="contact-info-item">
+                        <div class="contact-info-icon fa fa-map-marker"></div>
+                        <div class="contact-info-text">
+                          <p><span>Address:</span> 198 West 21th Street, Suite 721 New York NY 10016</p>
+                        </div>
+                      </div>
+                    </div>
+                  <div class="contact-info-box">
+                    <div class="contact-info-item">
+                      <div class="contact-info-icon fa fa-phone"></div>
+                      <div class="contact-info-text">
+                        <p><span>Phone:</span> <a href="tel://1234567920">+ 1235 2355 98</a></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="contact-info-box">
+                    <div class="contact-info-item">
+                      <div class="contact-info-icon fa fa-paper-plane"></div>
+                      <div class="contact-info-text">
+                        <p><span>Email:</span> <a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="contact-info-box">
+                    <div class="contact-info-item">
+                      <div class="contact-info-icon fa fa-globe"></div>
+                    <div class="contact-info-text">
+                      <p><span>Website</span> <a href="#">yoursite.com</a></p>
+                    </div>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="signin" class="section signin-section">
+    <div class="section-content">
+      <div class="form-box">
+        <div class="form-value">
+          <form action="">
+            <h2>Login</h2>
+            <div class="inputbox">
+              <ion-icon name="mail-outline"></ion-icon>
+              <input type="email" required>
+              <label for="">Email</label>
+            </div>
+            <div class="inputbox">
+              <ion-icon name="lock-closed-outline"></ion-icon>
+              <input type="password" required>
+              <label for="">Password</label>
+            </div>
+            <div class="forget">
+              <label>
+                <input type="checkbox"> Remember me
+              </label>
+              <label>
+                <a href="#">Forgot password?</a>
+              </label>
+            </div>
+            <button>Log in</button>
+            <div class="register">
+              <p>Don't have a account ? <a href="#">Register</a></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<script src='https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js'></script>
+<script src='https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js'></script>
+<script src="script.js"></script>
+<!-- <script src="bootstrap.min.js"></script> -->
+
+<script src="main.js"></script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,94 @@
+/* General styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+#captions {
+    /* position: absolute; */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.start-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #ff9900;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.start-button:hover {
+    background-color: #ff6600;
+}
+/* Navbar styling */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgb(5, 254, 249);
+    background: linear-gradient(90deg, rgba(5, 254, 249, 1) 0%, rgba(3, 43, 249, 1) 50%, rgba(165, 2, 255, 1) 100%);
+    color: white;
+}
+.carousel-item active{
+    height: 500px;
+}
+#img1{
+     viewport-fit: cover;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.navbar-logo {
+    font-size: x-large;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-menu li {
+    margin-right: 20px;
+}
+
+.navbar-menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    transition: color 0.3s;
+}
+
+.navbar-menu li a:hover {
+    color: #000000;
+}
+
+#nav:hover .nav-item{
+    filter: blur(5px);
+}
+
+#nav:hover .nav-item:hover {
+    filter: blur(0px);
+}
