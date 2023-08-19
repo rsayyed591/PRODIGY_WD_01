@@ -8,7 +8,7 @@ Welcome to the Techno Website project! This repository contains the HTML, CSS, a
 2. [Preview](#preview)
 3. [Getting Started](#getting-started)
 4. [Usage](#usage)
-5. [License](#license)
+5. [Contributing](#contributing)
 
 ## Description
 
