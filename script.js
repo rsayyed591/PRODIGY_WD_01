@@ -27,3 +27,33 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 });
+
+"use strict";
+
+var contactForm = function() {
+    var form = document.getElementById('contactForm');
+    if (form) {
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            var submitButton = document.querySelector('.submitting');
+            var waitText = 'Submitting...';
+
+            submitButton.style.display = 'block';
+            submitButton.textContent = waitText;
+
+            setTimeout(function() {
+                submitButton.style.display = 'none';
+                submitButton.textContent = waitText;
+
+                var successMessage = document.getElementById('form-message-success');
+                successMessage.style.display = 'block';
+
+                setTimeout(function() {
+                    successMessage.style.display = 'none';
+                }, 3000);
+            }, 2000);
+        });
+    }
+};
+contactForm();
